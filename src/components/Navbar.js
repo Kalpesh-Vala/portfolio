@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
-import { FaGithub, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa';
+import { useTheme } from 'next-themes';
+import { FaGithub, FaLinkedin, FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import Loading from './Loading';
 
 const Navbar = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -37,17 +39,17 @@ const Navbar = () => {
   return (
     <>
       {isLoading && <Loading />}
-      <nav className="sticky top-0 z-50 bg-white shadow-md transition-colors duration-200">
+      <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <Link href="/" className="text-xl font-bold text-gray-800 hover:text-gray-600 transition-colors duration-200">
+            <Link href="/" className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200">
               Kalpesh Vala
             </Link>
 
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
             >
               <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (
@@ -64,7 +66,7 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="nav-link text-gray-600 hover:text-gray-800 transition-all duration-200"
+                  className="nav-link text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all duration-200"
                 >
                   {link.label}
                 </a>
@@ -72,11 +74,22 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
+              <button
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors duration-200"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? (
+                  <FaSun className="w-5 h-5 text-yellow-500" />
+                ) : (
+                  <FaMoon className="w-5 h-5 text-gray-600" />
+                )}
+              </button>
               <a
                 href="https://github.com/Kalpesh-Vala"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon text-gray-600 hover:text-gray-800 transition-all duration-200"
+                className="social-icon text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all duration-200"
               >
                 <FaGithub className="w-6 h-6" />
               </a>
@@ -84,7 +97,7 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/kalpesh-vala-1b2458249"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon text-gray-600 hover:text-gray-800 transition-all duration-200"
+                className="social-icon text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all duration-200"
               >
                 <FaLinkedin className="w-6 h-6" />
               </a>
@@ -102,7 +115,7 @@ const Navbar = () => {
                     handleNavClick(e, link.href);
                     setIsMenuOpen(false);
                   }}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 transition-all duration-200"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
                 >
                   {link.label}
                 </a>
@@ -112,7 +125,7 @@ const Navbar = () => {
                   href="https://github.com/Kalpesh-Vala"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="social-icon text-gray-600 hover:text-gray-800 transition-all duration-200"
+                  className="social-icon text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all duration-200"
                 >
                   <FaGithub className="w-6 h-6" />
                 </a>
@@ -120,7 +133,7 @@ const Navbar = () => {
                   href="https://www.linkedin.com/in/kalpesh-vala-1b2458249"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="social-icon text-gray-600 hover:text-gray-800 transition-all duration-200"
+                  className="social-icon text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all duration-200"
                 >
                   <FaLinkedin className="w-6 h-6" />
                 </a>

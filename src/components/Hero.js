@@ -15,7 +15,7 @@ const Hero = () => {
           className="flex-1 text-center md:text-left"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Hi, I'm <span className="text-blue-600 dark:text-blue-400">Kalpesh Vala</span>
+            Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Kalpesh Vala</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             A passionate developer specializing in Java backend, web development, and machine learning.

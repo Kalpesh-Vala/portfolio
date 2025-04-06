@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import { FaGithub, FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
@@ -91,10 +92,12 @@ const ProjectsPage = () => {
                 className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative h-64 bg-gray-200 dark:bg-gray-700">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority={index === 0}
                   />
                 </div>
                 <div className="p-6">

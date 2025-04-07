@@ -5,15 +5,15 @@ import { motion } from 'framer-motion';
 const About = () => {
   const details = [
     { label: 'College', value: 'Institute of Technology, Nirma University' },
-    { label: 'CGPA', value: '8.2' },
+    { label: 'CGPA', value: '8.08' },
     { label: 'Location', value: 'Gujarat, India' },
   ];
 
   const interests = [
     'Java Backend Development',
     'Web Development',
-    'App Development',
-    'Machine Learning',
+    'DevOps',
+    'Cloud Computing',
     'System Administration',
   ];
 

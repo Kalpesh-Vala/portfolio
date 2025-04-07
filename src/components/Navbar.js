@@ -74,17 +74,6 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
-              <button
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors duration-200"
-                aria-label="Toggle theme"
-              >
-                {theme === 'dark' ? (
-                  <FaSun className="w-5 h-5 text-yellow-500" />
-                ) : (
-                  <FaMoon className="w-5 h-5 text-gray-600" />
-                )}
-              </button>
               <a
                 href="https://github.com/Kalpesh-Vala"
                 target="_blank"

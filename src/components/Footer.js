@@ -6,22 +6,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaGithub className="w-6 h-6" />,
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/Kalpesh-Vala',
       label: 'GitHub'
     },
     {
       icon: <FaLinkedin className="w-6 h-6" />,
-      href: 'https://linkedin.com/in/yourusername',
+      href: 'https://www.linkedin.com/in/kalpesh-vala-1b2458249',
       label: 'LinkedIn'
     },
     {
-      icon: <FaTwitter className="w-6 h-6" />,
-      href: 'https://twitter.com/yourusername',
-      label: 'Twitter'
-    },
-    {
       icon: <FaEnvelope className="w-6 h-6" />,
-      href: 'mailto:your.email@example.com',
+      href: 'mailto:valakalpesh6175@gmail.com',
       label: 'Email'
     }
   ];

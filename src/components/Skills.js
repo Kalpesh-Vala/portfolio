@@ -16,7 +16,7 @@ const Skills = () => {
     },
     {
       title: 'Tools',
-      skills: ['Git', 'Docker', 'Jenkins', 'VS Code', 'IntelliJ IDEA'],
+      skills: ['Git', 'Docker', 'Kubernetes', 'Jenkins', 'VS Code', 'IntelliJ IDEA'],
       icon: '🔧'
     },
     {

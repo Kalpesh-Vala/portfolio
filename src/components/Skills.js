@@ -6,12 +6,12 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Languages',
-      skills: ['Java', 'JavaScript', 'Python', 'C++', 'SQL'],
+      skills: ['Java', 'Go', 'JavaScript', 'Python', 'C++', 'SQL'],
       icon: '💻'
     },
     {
       title: 'Frameworks',
-      skills: ['Spring Boot', 'React.js', 'Next.js', 'Node.js', 'Express.js'],
+      skills: ['Spring Boot', 'React.js', 'Next.js','Flask', 'Django', 'Gin', 'Fiber'],
       icon: '🛠️'
     },
     {

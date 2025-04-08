@@ -10,7 +10,7 @@ const Achievements = () => {
         'Completed personal & professional development and masterclasses led by world-class educators.',
       date: '2024',
       icon: '🌍',
-      link: '#',
+      link: 'https://www.linkedin.com/in/kalpesh-vala-1b2458249/details/certifications/',
     },
     {
       title: 'Complete Kubernetes: Easy Practical Guide + Project',
@@ -18,7 +18,7 @@ const Achievements = () => {
         'Completed hands-on Kubernetes training and project via Udemy.',
       date: '2024',
       icon: '📦',
-      link: '#',
+      link: 'https://www.udemy.com/certificate/UC-76bde9e9-e159-43c7-a98a-9146f53bf5ba/',
     },
     {
       title: 'Certificate of Scholar - Semester II',
@@ -26,7 +26,7 @@ const Achievements = () => {
         'Awarded Certificate of Scholar by Nirma University for academic excellence.',
       date: '2023',
       icon: '🎓',
-      link: '#',
+      link: 'https://www.linkedin.com/in/kalpesh-vala-1b2458249/details/certifications/',
     },
     {
       title: 'Smart India Hackathon',
@@ -34,7 +34,7 @@ const Achievements = () => {
         'Participated in national-level hackathon organized by the Government of India.',
       date: '2023',
       icon: '💡',
-      link: '#',
+      link: 'https://www.linkedin.com/in/kalpesh-vala-1b2458249/details/certifications/',
     },
     {
       title: 'HackNuthone 6.0 - Top 10 Team',
@@ -42,7 +42,7 @@ const Achievements = () => {
         'Selected in the top 10 teams and received participation certificate.',
       date: '2023',
       icon: '🏅',
-      link: '#',
+      link: 'https://certificate.givemycertificate.com/c/d0d58073-966f-46a3-a906-b5016068ecb3',
     },
     {
       title: 'National Research Symposium 2025',
@@ -50,7 +50,7 @@ const Achievements = () => {
         'Received Certificate of Participation in National Research Symposium for Engineering UG Students at Nirma University.',
       date: '2025',
       icon: '🧪',
-      link: '#',
+      link: 'https://www.linkedin.com/in/kalpesh-vala-1b2458249/details/certifications/',
     },
   ];
 

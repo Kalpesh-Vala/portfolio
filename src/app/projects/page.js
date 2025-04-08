@@ -9,44 +9,41 @@ import { FaGithub, FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
 const ProjectsPage = () => {
   const allProjects = [
     {
-      title: 'Project 1',
-      description: 'A comprehensive description of your first project. Include the problem it solves, the technologies used, and your role in development.',
-      image: '/project1.jpg',
-      github: 'https://github.com/yourusername/project1',
-      demo: 'https://project1-demo.com',
-      video: 'https://youtube.com/watch?v=project1',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express'],
+      title: 'Employee Management System',
+      description: 'A simple Spring Boot application that performs CRUD operations for managing employees...',
+      image: '/user-crud.jpeg',
+      github: 'https://github.com/Kalpesh-Vala/user-crud',
+      demo: '',
+      video: '',
+      tags: ['Java', 'Spring Boot', 'MySQL', 'REST API'],
       highlights: [
-        'Implemented real-time data synchronization',
-        'Reduced loading time by 60%',
-        'Integrated third-party APIs'
-      ]
+        'Built CRUD endpoints using Spring Data JPA',
+        'Implemented service-repository-controller architecture',
+        'Used MySQL as backend database',
+      ],
     },
     {
-      title: 'Project 2',
-      description: 'Detailed explanation of your second project. Discuss the challenges faced and how you overcame them.',
-      image: '/project2.jpg',
-      github: 'https://github.com/yourusername/project2',
-      demo: 'https://project2-demo.com',
-      video: 'https://youtube.com/watch?v=project2',
-      tags: ['Java', 'Spring Boot', 'MySQL', 'Docker'],
+      title: 'E-commerce Backend System - MyShops',
+      description: 'Developed a fully-functional e-commerce backend using Spring Boot following clean architecture...',
+      image: '/springboot-ecommerce.jpeg',
+      github: 'https://github.com/Kalpesh-Vala/my-shops',
+      demo: '',
+      video: '',
+      tags: ['Java', 'Spring Boot', 'MySQL', 'Docker', 'REST API'],
       highlights: [
-        'Developed RESTful API endpoints',
-        'Implemented JWT authentication',
-        'Containerized application deployment'
-      ]
+        'Modular folder structure with services, DTOs, requests/responses, and exceptions',
+        'Implemented user authentication, product, cart, and order APIs',
+        'Containerized the application using Docker for easy deployment',
+      ],
     },
-    // Add more projects as needed
   ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
+      transition: { staggerChildren: 0.2 },
+    },
   };
 
   const itemVariants = {
@@ -54,27 +51,27 @@ const ProjectsPage = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.5
-      }
-    }
+      transition: { duration: 0.5 },
+    },
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
       <Navbar />
-      
-      <main className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <main className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-12"
+            transition={{ duration: 0.6 }}
+            className="text-center mb-14"
           >
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">All Projects</h1>
-            <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
-            <p className="mt-4 text-gray-600 dark:text-gray-300">
+            <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">
+              All Projects
+            </h1>
+            <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-4"></div>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
               A collection of my work and side projects
             </p>
           </motion.div>
@@ -83,15 +80,15 @@ const ProjectsPage = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            className="grid gap-10 sm:grid-cols-2"
           >
             {allProjects.map((project, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="relative h-64 bg-gray-200 dark:bg-gray-700">
+                <div className="relative h-64 w-full bg-gray-200 dark:bg-gray-700">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -101,63 +98,63 @@ const ProjectsPage = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                    {project.title}
-                  </h2>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    {project.description}
-                  </p>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                      Key Highlights
-                    </h3>
-                    <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
+                  <h2 className="text-2xl font-semibold mb-3">{project.title}</h2>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+
+                  <div className="mb-5">
+                    <h3 className="text-lg font-medium mb-2">Key Highlights</h3>
+                    <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300 space-y-1">
                       {project.highlights.map((highlight, i) => (
                         <li key={i}>{highlight}</li>
                       ))}
                     </ul>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"
+                        className="text-sm px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
 
-                  <div className="flex items-center space-x-4">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <FaGithub className="w-5 h-5" />
-                      <span>GitHub</span>
-                    </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <FaExternalLinkAlt className="w-4 h-4" />
-                      <span>Live Demo</span>
-                    </a>
-                    <a
-                      href={project.video}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <FaPlay className="w-4 h-4" />
-                      <span>Video</span>
-                    </a>
+                  <div className="flex flex-wrap items-center gap-4 mt-2">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400"
+                      >
+                        <FaGithub />
+                        GitHub
+                      </a>
+                    )}
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400"
+                      >
+                        <FaExternalLinkAlt />
+                        Live Demo
+                      </a>
+                    )}
+                    {project.video && (
+                      <a
+                        href={project.video}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400"
+                      >
+                        <FaPlay />
+                        Watch Video
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>

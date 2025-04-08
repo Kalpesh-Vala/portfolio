@@ -10,9 +10,10 @@ const About = () => {
   ];
 
   const interests = [
-    'Java Backend Development',
+    'Java Development',
     'Web Development',
     'DevOps',
+    'Python Programming',
     'Cloud Computing',
     'System Administration',
   ];

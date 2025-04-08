@@ -33,7 +33,7 @@ const Hero = () => {
               download
               className="inline-flex items-center px-6 py-3 rounded-lg border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white transition-colors duration-200"
             >
-              Download CV
+              Download Resume
             </a>
           </div>
         </motion.div>

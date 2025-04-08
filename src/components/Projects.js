@@ -13,7 +13,7 @@ const Projects = () => {
         'Web app to detect fraudulent transactions using Isolation Forest and Logistic Regression with Flask. Supports real-time detection via transaction uploads and stores data in MongoDB.',
       image: '/fraud-detection.jpg',
       github: 'https://github.com/Kalpesh-Vala/Credit-Card-Fraud-Detection',
-      demo: '',
+      demo: 'https://credit-card-fraud-detection-2oay.onrender.com/',
       video: '',
       tags: ['Flask', 'MongoDB', 'Machine Learning', 'Python', 'HTML/CSS'],
     },

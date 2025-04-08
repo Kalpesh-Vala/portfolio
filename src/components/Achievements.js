@@ -21,6 +21,14 @@ const Achievements = () => {
       link: 'https://www.udemy.com/certificate/UC-76bde9e9-e159-43c7-a98a-9146f53bf5ba/',
     },
     {
+      title: 'AWS Academy Graduate - AWS Academy Cloud Foundations',
+      description:
+        'Issued by Amazon Web Services Training and Certification.',
+      date: '2024',
+      icon: '☁️',
+      link: 'https://www.credly.com/badges/729329cb-52e5-4ba2-bed2-eecbc94e4caa/public_url',
+    },
+    {
       title: 'Certificate of Scholar - Semester II',
       description:
         'Awarded Certificate of Scholar by Nirma University for academic excellence.',

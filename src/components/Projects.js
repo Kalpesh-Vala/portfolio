@@ -22,6 +22,22 @@ const Projects = () => {
   const featuredProjects = [
     {
       id: 1,
+      title: 'GoReactChat – Real-Time Chat Application',
+      subtitle: 'Full-Stack Communication Platform',
+      description:
+        'Designed and developed a comprehensive real-time chat platform with WebSocket-based live messaging, secure JWT authentication, and multi-database architecture. Features AI chatbot integration, private/group chats, message reactions, and modern responsive UI.',
+      image: '/chat-app.png',
+      github: 'https://github.com/Kalpesh-Vala/go-react-chat',
+      demo: 'https://go-react-chatapp.vercel.app',
+      video: '',
+      tags: ['Go', 'Gorilla Mux', 'WebSockets', 'ReactJS', 'Tailwind CSS', 'PostgreSQL', 'MongoDB', 'Redis', 'JWT', 'JSON'],
+      category: 'Real-Time App',
+      status: 'Development',
+      features: ['WebSocket Live Messaging', 'AI Chatbot Integration', 'Multi-Database Architecture', 'Message Reactions', 'Group & Private Chats', 'Real-time User Status'],
+      gradient: 'from-green-600 to-teal-600',
+    },
+    {
+      id: 2,
       title: 'Credit Card Fraud Detection System',
       subtitle: 'ML-Powered Security Solution',
       description:
@@ -37,7 +53,7 @@ const Projects = () => {
       gradient: 'from-purple-600 to-pink-600',
     },
     {
-      id: 2,
+      id: 3,
       title: 'E-Commerce Platform Development',
       subtitle: 'Full-Stack Enterprise Solution',
       description:
@@ -51,22 +67,6 @@ const Projects = () => {
       status: 'Development',
       features: ['Payment Gateway', 'Inventory Management', 'Docker Deployment'],
       gradient: 'from-blue-600 to-cyan-600',
-    },
-    {
-      id: 3,
-      title: 'Real-Time Chat Application',
-      subtitle: 'Modern Communication Platform',
-      description:
-        'High-performance chat application with Go backend, WebSocket real-time messaging, JWT authentication, and modern Next.js frontend. Designed for seamless user experience and secure communications.',
-      image: '/chat-app.png',
-      github: 'https://github.com/Kalpesh-Vala/go-next-chat',
-      demo: 'https://go-next-chat.vercel.app',
-      video: '',
-      tags: ['Go', 'Next.js', 'WebSocket', 'JWT', 'Gin'],
-      category: 'Real-Time App',
-      status: 'Live',
-      features: ['WebSocket Integration', 'JWT Authentication', 'Modern UI'],
-      gradient: 'from-green-600 to-teal-600',
     },
   ];
 

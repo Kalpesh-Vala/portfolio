@@ -170,7 +170,7 @@ const Hero = () => {
             {/* Main Title */}
             <motion.div variants={itemVariants} className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                <span className="text-gray-900 dark:text-white">Hi, I'm </span>
+                <span className="text-gray-900 dark:text-white">Hi, I&apos;m </span>
                 <motion.span
                   className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent"
                   animate={{

@@ -156,8 +156,8 @@ const About = () => {
                   >
                     <FaQuoteRight className="text-blue-600 dark:text-blue-400 text-2xl mb-4" />
                     <p className="text-gray-700 dark:text-gray-300 font-medium italic">
-                      "Demonstrates a hands-on approach to building efficient, real-world solutions, 
-                      including a real-time chat application and an e-commerce backend system."
+                      &ldquo;Demonstrates a hands-on approach to building efficient, real-world solutions, 
+                      including a real-time chat application and an e-commerce backend system.&rdquo;
                     </p>
                   </motion.div>
                 </div>

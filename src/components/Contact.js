@@ -178,7 +178,7 @@ const Contact = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
           >
-            Let's Work <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Together</span>
+            Let&apos;s Work <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Together</span>
           </motion.h2>
           
           <motion.div 
@@ -190,7 +190,7 @@ const Contact = () => {
             variants={itemVariants}
             className="mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
           >
-            Have a project in mind or want to discuss opportunities? I'm always excited to connect with fellow developers and potential collaborators.
+            Have a project in mind or want to discuss opportunities? I&apos;m always excited to connect with fellow developers and potential collaborators.
           </motion.p>
         </motion.div>
 
@@ -272,7 +272,7 @@ const Contact = () => {
               <h4 className="text-xl font-bold mb-3">Quick Response Guarantee</h4>
               <p className="text-blue-100">
                 I value your time and make it a priority to respond to all messages within 24 hours. 
-                Let's start a conversation about your next project!
+                Let&apos;s start a conversation about your next project!
               </p>
             </motion.div>
           </motion.div>

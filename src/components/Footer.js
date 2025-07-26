@@ -36,7 +36,7 @@ const Footer = () => {
     },
     {
       icon: FaEnvelope,
-      href: 'mailto:kalpeshvala27@gmail.com',
+      href: 'mailto:valakalpesh6175@gmail.com',
       label: 'Email',
       color: 'hover:text-red-400'
     }
@@ -53,13 +53,13 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: FaEnvelope,
-      text: 'kalpeshvala27@gmail.com',
-      href: 'mailto:kalpeshvala27@gmail.com'
+      text: 'valakalpesh6175@@gmail.com',
+      href: 'mailto:valakalpesh6175@gmail.com'
     },
     {
       icon: FaPhone,
-      text: '+91 98765 43210',
-      href: 'tel:+919876543210'
+      text: '+91 79844 07210',
+      href: 'tel:+917984407210'
     },
     {
       icon: FaMapMarkerAlt,

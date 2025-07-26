@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   const details = [
     { label: 'College', value: 'Institute of Technology, Nirma University' },
-    { label: 'CGPA', value: '8.08' },
+    { label: 'CGPA', value: '8.16 / 10' },
     { label: 'Location', value: 'Gujarat, India' },
   ];
 
@@ -42,9 +42,12 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Background</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I am a passionate developer with a strong foundation in computer science and engineering.
-              My academic journey at Nirma University has equipped me with both theoretical knowledge and
-              practical skills in various aspects of software development.
+              Passionate and self-driven Computer Science Engineering student with a strong foundation in Java, Python, C++, JavaScript, and Go.
+              Experienced in developing full-stack software and web applications , with a focus on backend development and scalable system
+              design. Skilled in Spring Boot, Flask, Express.js, Next.js, Node.js, and web technologies like ReactJS and Tailwind CSS. Currently
+              exploring Kubernetes and the Spring framework. Demonstrates a hands-on approach to building efficient, real-world solutions,
+              including a real-time chat application and an e-commerce backend system. Actively involved in projects and hackathons, with a
+              consistent drive to learn and experiment with new technologies.
             </p>
             <div className="space-y-4">
               {details.map((detail, index) => (

@@ -197,7 +197,7 @@ const Hero = () => {
                   animate={{ opacity: [1, 0.7, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  Full Stack Developer
+                  Software Engineer
                 </motion.span>
               </motion.div>
             </motion.div>
@@ -208,9 +208,11 @@ const Hero = () => {
               variants={itemVariants}
             >
               Passionate developer specializing in{' '}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">Java backend</span>,{' '}
-              <span className="font-semibold text-green-600 dark:text-green-400">web development</span>, and{' '}
-              <span className="font-semibold text-purple-600 dark:text-purple-400">machine learning</span>.
+              <span className="font-semibold text-blue-600 dark:text-blue-400">Backend Development</span>,{' '}
+              <span className="font-semibold text-green-600 dark:text-green-400">Cloud Native Applications</span>,{' '}
+              <span className="font-semibold text-purple-600 dark:text-purple-400">DevSecOps</span>,{' '}
+              <span className="font-semibold text-blue-600 dark:text-blue-400">Scalable Applications</span>, and{' '}
+              <span className="font-semibold text-green-600 dark:text-green-400">Microservices</span>.
               Currently studying at Institute of Technology, Nirma University.
             </motion.p>
 
@@ -283,7 +285,7 @@ const Hero = () => {
               {[
                 { number: "15+", label: "Projects" },
                 { number: "3+", label: "Years Coding" },
-                { number: "8.16", label: "CGPA" }
+                { number: "8.20", label: "CGPA" }
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}

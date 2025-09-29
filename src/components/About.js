@@ -25,7 +25,7 @@ const About = () => {
     },
     { 
       label: 'CGPA', 
-      value: '8.16 / 10',
+      value: '8.20 / 10',
       icon: FaGraduationCap,
       color: 'text-green-600 dark:text-green-400'
     },
@@ -291,7 +291,7 @@ const About = () => {
           {[
             { number: "15+", label: "Projects Completed", icon: "🚀" },
             { number: "3+", label: "Years of Coding", icon: "⌨️" },
-            { number: "8.16", label: "CGPA", icon: "🎓" },
+            { number: "8.20", label: "CGPA", icon: "🎓" },
             { number: "100%", label: "Dedication", icon: "💯" }
           ].map((stat, index) => (
             <motion.div

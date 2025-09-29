@@ -22,7 +22,6 @@ import {
   SiSpringboot, 
   SiNextdotjs, 
   SiFlask, 
-  SiDjango, 
   SiKubernetes, 
   SiJenkins, 
   SiMysql, 
@@ -45,12 +44,12 @@ const Skills = () => {
     {
       title: 'Programming Languages',
       skills: [
-        { name: 'Java', icon: FaJava, level: 90, color: 'from-red-500 to-orange-500' },
-        { name: 'Go', icon: SiGo, level: 85, color: 'from-blue-400 to-cyan-400' },
-        { name: 'Python', icon: FaPython, level: 88, color: 'from-blue-500 to-yellow-500' },
-        { name: 'JavaScript', icon: FaJs, level: 92, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'TypeScript', icon: SiTypescript, level: 80, color: 'from-blue-600 to-blue-800' },
-        { name: 'C++', icon: SiCplusplus, level: 75, color: 'from-blue-700 to-purple-700' },
+        { name: 'Java', icon: FaJava, color: 'from-red-500 to-orange-500' },
+        { name: 'Go', icon: SiGo, color: 'from-blue-400 to-cyan-400' },
+        { name: 'Python', icon: FaPython, color: 'from-blue-500 to-yellow-500' },
+        { name: 'JavaScript', icon: FaJs, color: 'from-yellow-400 to-yellow-600' },
+        { name: 'TypeScript', icon: SiTypescript, color: 'from-blue-600 to-blue-800' },
+        { name: 'C++', icon: SiCplusplus, color: 'from-blue-700 to-purple-700' },
       ],
       icon: FaCode,
       color: 'from-blue-500 to-purple-600',
@@ -59,13 +58,12 @@ const Skills = () => {
     {
       title: 'Frameworks & Libraries',
       skills: [
-        { name: 'Spring Boot', icon: SiSpringboot, level: 88, color: 'from-green-500 to-green-700' },
-        { name: 'React.js', icon: FaReact, level: 90, color: 'from-cyan-400 to-blue-500' },
-        { name: 'Next.js', icon: SiNextdotjs, level: 85, color: 'from-gray-700 to-black' },
-        { name: 'Flask', icon: SiFlask, level: 82, color: 'from-gray-600 to-gray-800' },
-        { name: 'Django', icon: SiDjango, level: 78, color: 'from-green-600 to-green-800' },
-        { name: 'Express.js', icon: SiExpress, level: 80, color: 'from-gray-700 to-gray-900' },
-        { name: 'Tailwind CSS', icon: SiTailwindcss, level: 92, color: 'from-cyan-400 to-blue-500' },
+        { name: 'Spring Boot', icon: SiSpringboot, color: 'from-green-500 to-green-700' },
+        { name: 'React.js', icon: FaReact, color: 'from-cyan-400 to-blue-500' },
+        { name: 'Next.js', icon: SiNextdotjs, color: 'from-gray-700 to-black' },
+        { name: 'Flask', icon: SiFlask, color: 'from-gray-600 to-gray-800' },
+        { name: 'Express.js', icon: SiExpress, color: 'from-gray-700 to-gray-900' },
+        { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'from-cyan-400 to-blue-500' },
       ],
       icon: FaTools,
       color: 'from-green-500 to-teal-600',
@@ -74,12 +72,12 @@ const Skills = () => {
     {
       title: 'DevOps & Tools',
       skills: [
-        { name: 'Docker', icon: FaDocker, level: 85, color: 'from-blue-500 to-blue-700' },
-        { name: 'Kubernetes', icon: SiKubernetes, level: 75, color: 'from-blue-600 to-purple-600' },
-        { name: 'Jenkins', icon: SiJenkins, level: 70, color: 'from-blue-700 to-gray-700' },
-        { name: 'Git', icon: FaGit, level: 90, color: 'from-orange-500 to-red-500' },
-        { name: 'Linux', icon: SiLinux, level: 82, color: 'from-yellow-500 to-black' },
-        { name: 'Postman', icon: SiPostman, level: 88, color: 'from-orange-500 to-red-500' },
+        { name: 'Docker', icon: FaDocker, color: 'from-blue-500 to-blue-700' },
+        { name: 'Kubernetes', icon: SiKubernetes, color: 'from-blue-600 to-purple-600' },
+        { name: 'Jenkins', icon: SiJenkins, color: 'from-blue-700 to-gray-700' },
+        { name: 'Git', icon: FaGit, color: 'from-orange-500 to-red-500' },
+        { name: 'Linux', icon: SiLinux, color: 'from-yellow-500 to-black' },
+        { name: 'Postman', icon: SiPostman, color: 'from-orange-500 to-red-500' },
       ],
       icon: FaServer,
       color: 'from-purple-500 to-pink-600',
@@ -88,10 +86,10 @@ const Skills = () => {
     {
       title: 'Databases',
       skills: [
-        { name: 'MySQL', icon: SiMysql, level: 88, color: 'from-blue-600 to-orange-500' },
-        { name: 'MongoDB', icon: SiMongodb, level: 85, color: 'from-green-500 to-green-700' },
-        { name: 'PostgreSQL', icon: SiPostgresql, level: 80, color: 'from-blue-700 to-blue-900' },
-        { name: 'Redis', icon: SiRedis, level: 75, color: 'from-red-500 to-red-700' },
+        { name: 'MySQL', icon: SiMysql, color: 'from-blue-600 to-orange-500' },
+        { name: 'MongoDB', icon: SiMongodb, color: 'from-green-500 to-green-700' },
+        { name: 'PostgreSQL', icon: SiPostgresql, color: 'from-blue-700 to-blue-900' },
+        { name: 'Redis', icon: SiRedis, color: 'from-red-500 to-red-700' },
       ],
       icon: FaDatabase,
       color: 'from-orange-500 to-red-600',
@@ -127,13 +125,7 @@ const Skills = () => {
     }
   };
 
-  const skillBarVariants = {
-    hidden: { width: 0 },
-    visible: (level) => ({
-      width: `${level}%`,
-      transition: { duration: 1.5, ease: "easeOut" }
-    })
-  };
+
 
   return (
     <section id="skills" className="py-24 bg-gray-50 dark:bg-gray-800 relative overflow-hidden">
@@ -236,9 +228,9 @@ const Skills = () => {
                   </p>
                 </div>
 
-                {/* Skills List */}
+                {/* Skills Grid */}
                 <motion.div
-                  className="space-y-4"
+                  className="grid grid-cols-2 sm:grid-cols-3 gap-4"
                   initial={{ height: activeCategory === categoryIndex ? "auto" : "200px" }}
                   animate={{ height: activeCategory === categoryIndex ? "auto" : "200px" }}
                   style={{ overflow: "hidden" }}
@@ -246,57 +238,30 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <motion.div
                       key={skillIndex}
-                      className="relative"
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ delay: skillIndex * 0.1 }}
-                      whileHover={{ x: 5 }}
+                      className="relative group"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: skillIndex * 0.1, type: "spring", stiffness: 300 }}
+                      whileHover={{ scale: 1.05, y: -2 }}
                     >
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center space-x-3">
-                          <div className={`p-2 rounded-lg bg-gradient-to-r ${skill.color} text-white shadow-sm`}>
-                            <skill.icon className="w-4 h-4" />
-                          </div>
-                          <span className="font-medium text-gray-900 dark:text-white">
-                            {skill.name}
-                          </span>
-                        </div>
-                        <span className="text-sm text-gray-600 dark:text-gray-400 font-medium">
-                          {skill.level}%
-                        </span>
-                      </div>
-                      
-                      {/* Progress Bar */}
-                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
+                      <div className="flex flex-col items-center p-4 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 group-hover:shadow-lg">
                         <motion.div
-                          className={`h-full bg-gradient-to-r ${skill.color} rounded-full relative`}
-                          variants={skillBarVariants}
-                          initial="hidden"
-                          whileInView="visible"
-                          custom={skill.level}
-                          viewport={{ once: true }}
+                          className={`p-3 rounded-xl bg-gradient-to-r ${skill.color} text-white shadow-lg mb-3`}
+                          whileHover={{ rotate: 360 }}
+                          transition={{ duration: 0.6 }}
                         >
-                          <motion.div
-                            className="absolute inset-0 bg-white/20"
-                            animate={{
-                              x: ["-100%", "100%"],
-                              opacity: [0, 1, 0]
-                            }}
-                            transition={{
-                              duration: 2,
-                              repeat: Infinity,
-                              repeatDelay: 3,
-                              ease: "easeInOut"
-                            }}
-                          />
+                          <skill.icon className="w-6 h-6" />
                         </motion.div>
+                        <span className="font-medium text-gray-900 dark:text-white text-center text-sm">
+                          {skill.name}
+                        </span>
                       </div>
                     </motion.div>
                   ))}
                 </motion.div>
 
                 {/* Expand/Collapse Overlay */}
-                {activeCategory !== categoryIndex && category.skills.length > 4 && (
+                {activeCategory !== categoryIndex && category.skills.length > 6 && (
                   <motion.div
                     className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-gray-900 to-transparent flex items-end justify-center pb-4"
                     initial={{ opacity: 0 }}
